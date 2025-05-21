@@ -6,8 +6,7 @@ function randomNumber() {
   return Math.floor(Math.random() * 7);
 }
 
-function chooseMoods(moodNumber) {
+export function chooseMoods() {
+  let moodNumber = randomNumber();
   return moods[moodNumber]
 }
-
-console.log(chooseMoods(randomNumber()));
